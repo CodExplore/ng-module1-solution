@@ -10,7 +10,7 @@
 		$scope.LunchTest = function () {
 			$scope.messageArea = "Please enter data first";
 			var contentList = $scope.itemsList;
-			var splitList = contentList.split(" ");
+			var splitList = contentList.split(",");
 
 			var countItems = 0;
 			for (var i = 0; i < splitList.length; i++) {
@@ -25,8 +25,13 @@
 			}
 
 		}
-
+$scope.CheckChange = function () {
+		if($scope.itemsList ==="") {
+			$scope.messageArea = "Please enter data first";
+		}
+	}
 
 	}
+	
 
 })();
