@@ -17,7 +17,7 @@
 				countItems = countItems + 1;
 			}
 
-			if (countItems <= 3 && countItems !== 0) {
+			if (countItems <= 3 && countItems !== "") {
 				$scope.messageArea = "Enjoy";
 			}
 			if (countItems > 3) {
