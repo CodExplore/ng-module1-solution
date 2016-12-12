@@ -25,7 +25,7 @@
 			}
 
 		}
-$scope.CheckChange = function () {
+        $scope.CheckChange = function () {
 		if($scope.itemsList ==="") {
 			$scope.messageArea = "Please enter data first";
 		}
